@@ -67,7 +67,7 @@ bool OSCServer::availableCheck()
 }
 
 
-void OSCServer::addCallback(char *_adr , Pattern::AdrFunc _func )
+void OSCServer::addCallback(const char *_adr , Pattern::AdrFunc _func )
 {
     _adrMatch.addOscAddress(_adr, _func);
 }

@@ -49,7 +49,7 @@ public:
 
     //_adr osc address string pointer - "/ard/aaa"
     //_func callback function pointer
-    void addCallback(char *_adr , Pattern::AdrFunc _func);
+    void addCallback(const char *_adr , Pattern::AdrFunc _func);
 	void addOscMessageSink(OscMessageSink* sink );
 
 };

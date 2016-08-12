@@ -30,7 +30,7 @@ Pattern::Pattern(){
 Pattern::~Pattern(){    
 }
 
-void Pattern::addOscAddress(char *_adr ,  AdrFunc _func){
+void Pattern::addOscAddress(const char *_adr ,  AdrFunc _func){
     adrFunc[patternNum] = _func;
     addr[patternNum] = _adr;
     patternNum++;
