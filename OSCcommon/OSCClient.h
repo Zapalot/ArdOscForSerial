@@ -30,7 +30,7 @@ private:
 
     Stream* networkStream;
 
-    OSCEncoder::OSCEncoder encoder;
+    OSCEncoder encoder;
 	unsigned long lastSendMillis;	        ///< used to make sure that the Wifly sends each message in a single package.
 	unsigned long networkStreamTimeoutMillis;	///< if we wait that long between messages, an UDP package is sent. (At least if you use a wifly)
 public:

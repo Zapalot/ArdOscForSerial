@@ -30,8 +30,8 @@ private:
 
     char _rcvData[kMaxRecieveData];
 
-    OSCDecoder::OSCDecoder _decoder;
-    Pattern::Pattern _adrMatch;
+    OSCDecoder _decoder;
+    Pattern _adrMatch;
 
 public:
     
