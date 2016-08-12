@@ -39,7 +39,7 @@ private:
     OscMessageSink* sinks[kMaxPatternMatch];
 
 	
-	char *addr[kMaxPatternMatch];
+	const char *addr[kMaxPatternMatch];
 
     uint8_t patternNum;
 	uint8_t sinkNum; 
@@ -49,7 +49,7 @@ public:
     ~Pattern();
  
     
-	void addOscAddress(char *_adr , AdrFunc _func );
+	void addOscAddress(const char *_adr , AdrFunc _func );
 	void addOscMessageSink(OscMessageSink* sink );
     void execFunc(uint8_t _index,OSCMessage *_mes);
     

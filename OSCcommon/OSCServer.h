@@ -30,8 +30,8 @@ private:
 
     char _rcvData[kMaxRecieveData];
 
-    OSCDecoder::OSCDecoder _decoder;
-    Pattern::Pattern _adrMatch;
+    OSCDecoder _decoder;
+    Pattern _adrMatch;
 
 public:
     
@@ -49,7 +49,7 @@ public:
 
     //_adr osc address string pointer - "/ard/aaa"
     //_func callback function pointer
-    void addCallback(char *_adr , Pattern::AdrFunc _func);
+    void addCallback(const char *_adr , Pattern::AdrFunc _func);
 	void addOscMessageSink(OscMessageSink* sink );
 
 };
